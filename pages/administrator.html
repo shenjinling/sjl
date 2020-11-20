@@ -1,0 +1,36 @@
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<title>{% block title %}管理员登录界面{% end %}</title>
+	<link rel="stylesheet" href="{{ static_url('administrator.css') }} ">
+	{% block css %}{% end %}
+	<script src="{{ static_url('jquery-1.9.1.min.js') }} " type="text/javascript"></script>
+	<style type="text/css"></style>
+	{% block js %}{% end %}
+</head>
+<body>
+
+<div class="container">
+<div class="header"></div>
+
+<div class="left">
+	
+		<a href="/student"><p class = "li">学生信息</p>
+		<a href="/teacher"><p class = "li">教师信息</p>
+		<a href="/major"><p class = "li">专业</p>
+		<a href="/course"><p class = "li">课程</p>
+		<a href="/plan"><p class = "li">培养计划</p>
+		<a href="/tmission"><p class = "li">教学任务</p>
+		<a href="/grade"><p class = "li">成绩</p>
+		<a href="/head"><p class = "li">退出</p></a>
+	
+</div>
+
+<div class="content">
+{% block content %}{% end %}
+</div>
+
+</div>
+
+</body>
+</html>

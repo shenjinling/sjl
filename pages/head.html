@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>教务处登录</title>
+
+
+<style type="text/css">
+
+     body {
+        background-image: url("{{ static_url("77.jpg") }}"); 
+        background-size: 100%;
+    } 
+    /*标题样式*/
+    .title {
+        position: relative;
+        width: 420px;
+        height: 50px;
+        color: rgba(90,2,86);
+        font-weight: bold;
+        font-size: 20px;
+        background-color: transparent;
+        margin: 100px auto 0;
+        line-height: 47px;
+        text-align: center;
+        border-top: 0.05px solid rgba(90,2,86);
+        border-left: 0.05px solid rgba(90,2,86);
+        border-right: 0.05px solid rgba(90,2,86);
+    } 
+    /*表单样式*/
+    .form {
+        position: relative;
+        width: 420px;
+        height: 250px;
+        background-color:transparent;
+        margin: 0px auto 0;
+        padding-top:10px ;
+        border-left: 0.05px solid rgba(90,2,86);
+        border-right: 0.05px solid rgba(90,2,86);
+        border-bottom: 0.05px solid rgba(90,2,86);
+    }
+
+
+    /*输入框样式*/
+    .form .username input, .form .password input  {
+        border: 1px solid rgba(90,2,86) ;
+        background-color: rgba(243, 234, 242, 0.6);  
+        font-family: Georgia, Times, serif;
+        font-size: 18px;
+        color:rgba(90,2,86);
+        width: 200px;
+        height: 30px; 
+        margin: 10px auto;
+        margin-left: 110px;     
+        position: relative;
+        line-height: 40px;
+    }
+    /*选择框样式*/
+    .form select {
+        width: 85px;
+        height: 29px;
+        font-family: Georgia, Times,  serif;
+        font-size: 18px;
+        background-color: rgba(245, 238, 244, 0.6);
+        margin: 10px auto;
+        margin-left: 110px;     
+        position: relative;
+        line-height: 40px;
+        border: 1px solid rgba(90,2,86);
+    }
+    /*按钮样式*/
+    .form .bot{
+        width:130px;
+        height:28px;
+        margin: 10px auto;
+        margin-left: 110px;     
+        position: relative;
+        line-height: 40px;
+    
+    }
+    /*按钮内容样式*/
+    .form .bot input {
+        width: 60px;
+        height: 28px;
+        font-family: Georgia, Times,  serif;
+        font-size: 18px;
+        background-color:rgba(243, 234, 242, 0.6);
+        border: 1px solid rgba(90,2,86);
+
+    }   
+
+</style>
+    
+<body >
+    
+    <p class="title">天津工业大学教务处</p>
+
+    <form action="/" method="post" class="form">
+        <div class="username">
+        <input type="text"  name="username"  placeholder="请输入用户名" autocomplete="on" />
+       
+        </div>
+
+        <div class="password">
+            <input type="password"  name="password" placeholder="请输入六位密码" />
+        </div>
+
+        <div class="role">
+            <select>
+                <option>学生</option>
+                <option>教师</option>
+                <option>管理员</option>
+            </select>
+        </div>   
+
+        <div class="bot">
+            <input type="submit" value="登陆"  />
+            <input type="reset" value="重置"  />          
+        </div> 
+
+
+        
+         
+    </form>
+</body>
+</html>

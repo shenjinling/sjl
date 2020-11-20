@@ -1,0 +1,50 @@
+{% extends "./administrator.html" %}
+{% block title %} 专业信息 {% end %}
+
+{% block css %}
+{% end %}
+
+ {% block js %}
+<script src="{{ static_url('major.js') }} " type="text/javascript"></script>
+{% end %} 
+
+
+{% block content %}
+	<button id="btn-new"> 登记专业信息</button>
+	
+	<div id="dlg-major-form" style="display:none">
+	<hr>
+	<form id="frm-major">
+		<table>
+		<tr><td>专业编号：</td>
+	    	<td><input type="text" name="mno" value=""></td>
+		</tr>
+        <tr><td>专业：</td>
+			<td><input type="text" name="mname" value=""></td>
+		</tr>
+		<tr><td>操作：</td><td>
+			<input type="submit" value="修改">
+			<button id="btn-major-frm-close">关闭</button>
+		</td></tr>	
+
+        </table>
+	</form>
+	</div>
+	
+	<hr>
+	<div id="list">
+		<table border=0>
+			<thead>
+			<tr>
+				<th style="width:10%">专业编号
+				<th style="width:10%">专业名</th>
+				<th style="width:10%">操作</th>
+			</tr>
+			
+			</thead>
+			<tbody id="list-tbody">
+			
+			</tbody> 
+		</table>
+	</div>
+{% end %}

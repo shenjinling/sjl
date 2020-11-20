@@ -1,0 +1,26 @@
+{% extends "./studentpage.html" %}
+{% block title %} 培养计划 {% end %}
+
+{% block css %}
+{% end %}
+
+{% block js %}
+<script src="{{ static_url('s_plan.js') }} " type="text/javascript"></script>
+{% end %}
+
+
+{% block content %}
+	<div id="list">
+		<table border=0>
+			<thead>
+			<tr>
+                <th style="width:10%">学期
+                <th style="width:10%">课程
+				<th style="width:10%">学分</th>
+			</tr>
+			</thead>
+			<tbody id="list-tbody">
+			</tbody> 
+		</table>
+	</div>
+{% end %}

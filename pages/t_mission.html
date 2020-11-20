@@ -1,0 +1,28 @@
+{% extends "./teacherpage.html" %}
+{% block title %} 教学任务 {% end %}
+
+{% block css %}
+{% end %}
+
+{% block js %}
+<script src="{{ static_url('t_mission.js') }} " type="text/javascript"></script>
+{% end %}
+
+
+{% block content %}
+	<div id="list">
+		<table border=0>
+			<thead>
+			<tr>
+				<th style="width:10%">课程号
+                <th style="width:10%">课程
+                <th style="width:10%">地点
+                <th style="width:10%">时间点
+                <th style="width:10%">周数</th>
+			</tr>
+			</thead>
+			<tbody id="list-tbody">
+			</tbody> 
+		</table>
+	</div>
+{% end %}

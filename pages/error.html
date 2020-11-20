@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>错误处理</title>
+
+<style  type="text/css">
+
+    body {
+        background-image: url("{{ static_url("100.jpg") }}"); 
+        background-size: 100%;
+    }
+
+    .title {
+        position: relative;
+        width: 420px;
+        height: 60px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        background-color: rgb(160, 158, 160);
+        margin: 100px auto 0;
+        text-align: center;
+        padding-top: 40px;
+        box-shadow: 0 3px 3px;
+    } 
+
+
+    .but {
+        position: relative;
+        width: 400px;
+        height: 100px;
+        background-color:rgb(243, 243, 243);
+        margin: 0px auto 0;
+        box-shadow: 0 3px 3px rgba(153,153,153,0.8);
+        padding:10px ;
+    }
+
+  .but input {
+        
+        width: 150px;
+        height: 48px;
+        font-family: Georgia, Times,  serif;
+        font-size: 18px;
+        padding: 15px;
+        margin-top: 30px ;
+        margin-left: 120px ;
+        background-color:rgb(253, 251, 253);
+    }
+
+        
+</style>
+<body>
+
+</head>
+
+<body>
+    <form class="content">
+
+        <p class = "title">用户名或密码错误，请重新输入</p>
+
+        <form action="/" method="post" class="form">
+
+            <div class = "but">
+                <input type="button" value="返回登录" onclick="window.location.href = '/head'" />
+
+            </div>
+
+        </form>
+
+    
+    
+</body>
+
+</html>

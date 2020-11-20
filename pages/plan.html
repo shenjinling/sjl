@@ -1,0 +1,65 @@
+{% extends "./administrator.html" %}
+{% block title %} 培养计划 {% end %}
+
+{% block css %}
+{% end %}
+
+ {% block js %}
+<script src="{{ static_url('plan.js') }} " type="text/javascript"></script>
+{% end %} 
+
+
+{% block content %}
+	<div   id="plan-frm">
+		<tr><td>专业号：</td>
+			<td><input  type="text" name="pn" value="">
+			<button id="btn-search">搜索</button> </td>
+			<button id="btn-refresh">返回</button>
+		</tr>
+	</div>
+	<button id="btn-new"> 登记培养计划 </button>
+	
+	<div id="dlg-plan-form" style="display:none">
+	<hr>
+	<form id="frm-plan">
+		<table>
+		<input type="text" name="pn" value="" style="display:none">
+		<tr><td>系编号：</td>
+			<td><input type="text" name="p_mno" value=""></td>
+		</tr>
+
+		<tr><td>课程号：</td>
+	    	<td><input type="text" name="p_cno" value=""></td>
+		</tr>
+        <tr><td>学期：</td>
+			<td><input type="text" name="pterm" value=""></td>
+		</tr>
+		<tr>
+			<td>操作：</td><td>
+			<input type="submit" value="修改">
+			<button id="btn-plan-frm-close">关闭</button>
+		</td></tr>	
+        </table>
+	</form>
+	</div>
+	
+	<hr>
+	<div id="list">
+		<table border=0>
+			<thead>
+			<tr>
+				<th style="width:10%">专业编号
+				<th style="width:12%">专业名称
+				<th style="width:10%">课程编号	
+                <th style="width:10%">课程名称
+				<th style="width:10%">学期</th>
+				<th style="width:10%">操作</th>
+			</tr>
+			
+			</thead>
+			<tbody id="list-tbody">
+			
+			</tbody> 
+		</table>
+	</div>
+{% end %}

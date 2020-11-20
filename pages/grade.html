@@ -1,0 +1,66 @@
+{% extends "./administrator.html" %}
+{% block title %} 成绩信息 {% end %}
+
+{% block css %}
+{% end %}
+
+ {% block js %}
+<script src="{{ static_url('grade.js') }} " type="text/javascript"></script>
+{% end %} 
+{% block content %}
+	<div   id="grade-frm">
+		<tr><td>课程号：</td>
+			<td><input  type="text" name="gn" value="">
+			<button id="btn-search">搜索</button>
+			<button id="btn-refresh">返回</button> </td>
+		</tr>
+	</div>
+	
+	<button id="btn-new"> 登记成绩信息 </button>
+	<div id="dlg-grade-form" style="display:none">
+	<hr>
+	<form id="frm-grade">
+		<table>
+		<input type="text" name="gn" value="" style="display:none">
+		<tr><td>课程号：</td>
+			<td><input type="text" name="g_cno" value=""></td>
+		</tr>
+
+		<tr><td>学号：</td>
+	    	<td><input type="text" name="g_sno" value=""></td>
+		</tr>
+        <tr><td>成绩：</td>
+			<td><input type="text" name="grade" value=""></td>
+		</tr>
+
+		<tr>
+			<td>操作：</td><td>
+			<input type="submit" value="修改">
+			<button id="btn-grade-frm-close">关闭</button>
+		</td></tr>	
+
+        </table>
+	</form>
+	</div>
+	
+	<hr>
+	<div id="list">
+		<table border=0>
+			<thead>
+			<tr>
+				
+                <th style="width:10%">课程号
+                <th style="width:10%">课程
+                <th style="width:10%">学号
+				<th style="width:10%">姓名
+				<th style="width:10%">成绩</th>
+				<th style="width:10%">操作</th>
+			</tr>
+			
+			</thead>
+			<tbody id="list-tbody">
+			
+			</tbody> 
+		</table>
+	</div>
+{% end %}

@@ -1,0 +1,31 @@
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<title>{% block title %}教师登录界面{% end %}</title>
+	<link rel="stylesheet" href="{{ static_url('teacherpage.css') }} ">
+	{% block css %}{% end %}
+	<script src="{{ static_url('jquery-1.9.1.min.js') }} " type="text/javascript"></script>
+	<style type="text/css"></style>
+	{% block js %}{% end %}
+</head>
+<body>
+
+<div class="container">
+
+<div class="header"></div>
+
+<div class="left">
+		<a href="/t_mission"><p class = "li">教学任务</p></a>
+		<a href="/t_student"><p class = "li">学生名单</p></a>
+		<a href="/t_grade"><p class = "li">成绩表</p>
+		<a href="/head"><p class = "li">退出</p></a>
+</div>
+
+<div class="content">
+{% block content %}{% end %}
+</div>
+
+</div>
+
+</body>
+</html>

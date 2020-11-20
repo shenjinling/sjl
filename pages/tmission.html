@@ -1,0 +1,73 @@
+{% extends "./administrator.html" %}
+{% block title %} 教学任务 {% end %}
+
+{% block css %}
+{% end %}
+
+ {% block js %}
+<script src="{{ static_url('tmission.js') }} " type="text/javascript"></script>
+{% end %} 
+
+
+{% block content %}
+	<div   id="tmission-frm">
+		<tr><td>课程号：</td>
+			<td><input  type="text" name="tmn" value="">
+			<button id="btn-search">搜索</button>
+			<button id="btn-refresh">返回</button> </td>
+		</tr>
+	</div>
+	<button id="btn-new"> 登记教学任务 </button>
+	
+	<div id="dlg-tmission-form" style="display:none">
+	<hr>
+	<form id="frm-tmission">
+		<table>
+		<input type="text" name="tmn" value="" style="display:none">
+		<tr><td>课程号：</td>
+			<td><input type="text" name="tm_cno" value=""></td>
+		</tr>
+
+		<tr><td>工号：</td>
+	    	<td><input type="text" name="tm_tno" value=""></td>
+		</tr>
+        <tr><td>时间：</td>
+			<td><input type="text" name="tmtime" value=""></td>
+		</tr>
+		<tr><td>地点：</td>
+			<td><input type="text" name="tmplace" value=""></td>
+		</tr>
+		<tr><td>周：</td>
+			<td><input type="text" name="tmweek" value=""></td>
+		</tr>
+		<tr>
+			<td>操作：</td><td>
+			<input type="submit" value="修改">
+			<button id="btn-tmission-frm-close">关闭</button>
+		</td></tr>	
+
+        </table>
+	</form>
+	</div>
+	
+	<hr>
+	<div id="list">
+		<table border=0>
+			<thead>
+			<tr>
+				<th style="width:10%">课程号
+				<th style="width:10%">课程
+				<th style="width:10%">教师
+				<th style="width:10%">时间	
+                <th style="width:10%">地点
+				<th style="width:10%">周</th>
+				<th style="width:10%">操作</th>
+			</tr>
+			
+			</thead>
+			<tbody id="list-tbody">
+			
+			</tbody> 
+		</table>
+	</div>
+{% end %}

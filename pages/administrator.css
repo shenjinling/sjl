@@ -1,0 +1,95 @@
+div.container {/*整体样式*/
+	width: 100%;
+	border:1px solid  rgb(90, 2, 86);
+	line-height:150%;
+}
+
+div.header, div.footer {/*头的样式*/
+	padding:1em;
+	background: url(head.png);
+	background-size: cover;
+	height: 94px;
+	background-repeat: no-repeat;
+}
+
+div.left {/*左边表单样式*/
+	float:left;
+	width:190px;
+	height:100%;
+	background:linear-gradient(to right,#71246b ,rgb(90, 2, 86));
+	padding-bottom: 2em;
+	background-color: cover;
+	position: relative;
+}
+
+.li{/*左边每一个块的样式*/
+	padding:7.5%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	margin:0px auto 0;
+	border-bottom:1px solid white;
+	border-right:1px solid  rgb(90, 2, 86);
+}
+
+a {/*块内字体样式*/
+	text-decoration:none ;
+	font-family: "宋体";
+	color: white;
+}
+
+div.content {/*右边样式*/
+	min-height: 100%;
+	margin-left:190px;
+	border-left:1px solid #71246b;
+	padding:1em;
+	background-color: rgb(242, 227, 245);
+}
+
+
+th {/*表头样式*/
+	background:rgba(156, 156, 156, 0.603);
+	color: rgb(66, 60, 70);
+	font-weight: bolder;
+	font-size: 30px;
+	font-family: "黑体";
+	height:40px;
+
+}
+
+tr:nth-of-type(odd){/*表格里单数行的变换*/
+	background: rgba(236, 236, 236, 0.603);
+	color: rgb(29, 27, 27);
+	font-size: 20px;
+	text-align:center;
+	font-family: "宋体";
+	font-weight: bold;
+	height: 40px;
+	border:0px solid rgb(242, 227, 245);
+
+}
+tr:nth-of-type(even){/*表格里双数行的变换*/
+	background: rgba(254, 249, 255, 0.699);
+	color:rgb(29, 27, 27);
+	font-size: 20px;
+	text-align:center;
+	font-family: "宋体";
+	font-weight: bold;
+	height: 40px;
+	border:0px solid rgb(242, 227, 245);
+
+}
+
+button{
+	border-radius: 5px;
+	background-color:rgba(254, 249, 255, 0.699);
+	font-family: "宋体";
+	font-weight:500;
+}
+ input{
+	 border-radius: 5px;
+	 background-color:rgba(254, 249, 255, 0.699);
+	 font-family: "宋体";
+	 font-weight: 500;
+
+ }
